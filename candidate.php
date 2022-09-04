@@ -168,12 +168,12 @@
             data:{id:$id},
             success:function(resp){
                 window.location.assign(resp)
-                if(resp!=''){
-                    alert_toast("Data successfully downloaded",'success')
-                    setTimeout(function(){
-                        location.reload()
-                    },1500)
-                }
+                // if(resp!=''){
+                //     alert_toast("Data successfully downloaded",'success')
+                //     setTimeout(function(){
+                //         location.reload()
+                //     },1500)
+                // }
             }
         })
     }

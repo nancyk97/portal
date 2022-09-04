@@ -71,7 +71,8 @@ if($action == "check_existing_candidate"){
 		echo $save;
 }
 if($action == "download_certificate"){
-    $save = $crud->download_certificate();
+	$id = $_POST['id'];
+    $save = $crud->download_certificate($id);
     echo $save;
     return $save;
     if($save)

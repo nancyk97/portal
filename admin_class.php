@@ -13,6 +13,8 @@ class Action
 		include 'db_connect.php';
 
 		$this->db = $conn;
+
+		
 	}
 	function __destruct()
 	{
@@ -240,7 +242,6 @@ class Action
 			$data_cc .= ", result = ' $result'";
 			$data_cc .= ", result_date = ' $result_date'";
 
-
 			$save_cc = $this->db->query("INSERT INTO candidate_course set " . $data_cc);
 			return 1;
 		} else {
@@ -265,10 +266,10 @@ class Action
 		return $status;
 	}
 
-	function download_certificate()
+	function download_certificate($candidateid)
 	{
 		$doc_name = new html2pdf();
-		$path = $doc_name->generateDocument();
+		$path = $doc_name->generateDocument($candidateid);
 		return $path;
 	}
 }
