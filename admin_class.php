@@ -204,21 +204,18 @@ class Action
 		$data .= ", employer_id = '1'";
 		$data .= ", qualification = '$qualification'";
 		$data .= ", center_id = '$center_id'";
-		$data .= ", designation_id = '$designation'";
+		$data .= ", designation = '$designation'";
 
 		$data .= ", aadhar_number = '$aadhar_number'";
 		$data .= ", status = '0'";
-
 		if ($_FILES['profile_path']['tmp_name'] != '') {
-			$fname = strtotime(date('y-m-d H:i')) . '_' . $_FILES['profile_path']['tmp_name'];
+			$fname = strtotime(date('y-m-d H:i')) . '_' . $_FILES['profile_path']['name'];
 			$move = move_uploaded_file($_FILES['profile_path']['tmp_name'], 'assets/profile/' . $fname);
 			$data .= ", profile_path = '$fname' ";
 		} else {
 			$data .= ", profile_path = 'user.jpg' ";
 		}
 		$date = date('Y:m:d h:i:s', time());
-
-
 		$data .= ", date_modified = '$date'";
 		if (empty($id)) {
 			$save = $this->db->query("INSERT INTO candidate set " . $data);
@@ -226,9 +223,7 @@ class Action
 			$save = $this->db->query("UPDATE candidate set " . $data . " where id=" . $id);
 		}
 		if ($save) {
-
-
-			$qry = $this->db->query("SELECT * FROM candidate where aadhar_number = '" . $adhar_number ."' limit 1")->fetch_array();
+			$qry = $this->db->query("SELECT * FROM candidate where aadhar_number = '" . $aadhar_number ."' limit 1")->fetch_array();
 			foreach ($qry as $key => $value) {
 				if ($key == 'id')
 					$candidate_id = $value;

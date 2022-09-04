@@ -9,11 +9,11 @@
  	
 
 <?php
-		session_destroy();
+		// session_destroy();
 
 	session_start();
   if(!isset($_SESSION['login_id']))
-    // header('location:login.php');
+    header('location:login.php');
  include('./header.php'); 
  // include('./auth.php'); 
  ?>
