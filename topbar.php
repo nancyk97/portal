@@ -1,11 +1,17 @@
 <style>
   .logo {
-    margin: auto;
-    font-size: 20px;
-    background: white;
-    padding: 7px 11px;
-    border-radius: 50% 50%;
-    color: #000000b3;
+    /* background: url(assets/img/ABS_LOGO_New.ico); */
+    background-repeat: no-repeat;
+    padding: 0px;
+    margin: 0px;
+    /* height: 250px; */
+    width: 300px;
+    z-index: 10;
+  }
+
+  .img {
+    height: 100%;
+    width: 100%;
   }
 </style>
 
@@ -14,7 +20,7 @@
     <div class="col-lg-12">
       <div class="col-md-1 float-left" style="display: flex;">
         <div class="logo">
-          <span class="fa fa-hands-helping"></span>
+          <img src="assets/img/ABS-Reverse-Logo-1.png" />
         </div>
       </div>
       <div class="col-md-4 float-left text-white">
