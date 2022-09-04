@@ -8,7 +8,7 @@
 			<div class="row form-group">
 				<div class="col-md-12">
 					<label for="" class="control-label">Candidate Adhar Number</label>
-					<input type="number" class="form-control" for="aadhar_number" id="adhar_number" name="aadhar_number" onchange="TestOnTextChange()" required="" value="">
+					<input type="number" value="98765432103214" class="form-control" for="aadhar_number" id="adhar_number" name="aadhar_number" onchange="TestOnTextChange()" required="" value="">
 				</div>
 			</div>
 		</div>
@@ -16,15 +16,15 @@
 			<div class="row form-group">
 				<div class="col-md-4">
 					<label for="" class="control-label">Last Name</label>
-					<input type="text" class="form-control" name="lastname" id='lastname' required="" value="<?php echo isset($lastname) ? $lastname : ''  ?>">
+					<input type="text" class="form-control" value="lastname" name="lastname" id='lastname' required="" value="<?php echo isset($lastname) ? $lastname : ''  ?>">
 				</div>
 				<div class="col-md-4">
 					<label for="" class="control-label">First Name</label>
-					<input type="text" class="form-control" name="firstname" required="" value="<?php echo isset($firstname) ? $firstname : ''  ?>">
+					<input type="text" class="form-control" value="firstname" name="firstname" required="" value="<?php echo isset($firstname) ? $firstname : ''  ?>">
 				</div>
 				<div class="col-md-4">
 					<label for="" class="control-label">Middle Name</label>
-					<input type="text" class="form-control" name="middlename" required="" value="<?php echo isset($middlename) ? $middlename : ''  ?>">
+					<input type="text" class="form-control" value="middlename" name="middlename" required="" value="<?php echo isset($middlename) ? $middlename : ''  ?>">
 				</div>
 			</div>
 		</div>
@@ -32,15 +32,15 @@
 			<div class="row form-group">
 				<div class="col-md-4">
 					<label for="" class="control-label">Date Of Birth</label>
-					<input type="date" class="input-group-text" id="birthday" for="birthday" name="birthday">
+					<input type="date" class="input-group-text" id="birthday" for="birthday" value="2023-03-29" name="birthday">
 				</div>
 				<div class="col-md-4">
 					<label for="" class="control-label">Email</label>
-					<input type="email" class="form-control" name="email" for="email" required="" value="<?php echo isset($email) ? $email : ''  ?>">
+					<input type="email" class="form-control" value="asdf@asdfg.asdf" name="email" for="email" required="" value="<?php echo isset($email) ? $email : ''  ?>">
 				</div>
 				<div class="col-md-4">
 					<label for="" class="control-label">Contact</label>
-					<input type="text" class="form-control" name="contact" for="contact" required="" value="<?php echo isset($contact) ? $contact : ''  ?>">
+					<input type="text" class="form-control" value="9876543210" name="contact" for="contact" required="" value="<?php echo isset($contact) ? $contact : ''  ?>">
 				</div>
 			</div>
 		</div>
@@ -49,7 +49,7 @@
 			<div class="row form-group">
 				<div class="col-md-12">
 					<label for="" class="control-label">Qualification </label>
-					<input type="text" class="form-control" id="qualification" name="qualification"  required="" value="">
+					<input type="text" class="form-control" value="qualification" id="qualification" name="qualification"  required="" value="">
 				</div>
 			</div>
 		</div>
@@ -103,11 +103,11 @@
 				</div>
 				<div class="col-md-4">
 					<label for="" class="control-label">Date Of Validation</label>
-					<input type="date" class="input-group-text" id="Validation" for="Validation" name="Validation">
+					<input type="date" class="input-group-text" value="2023-03-29" id="Validation" for="Validation" name="Validation">
 				</div>
 				<div class="col-md-4">
 					<label for="" class="control-label">Date Of validity</label>
-					<input type="date" class="input-group-text" id="validity" for="validity" name="validity">
+					<input type="date" class="input-group-text" value="2023-03-29" id="validity" for="validity" name="validity">
 				</div>
 			</div>
 		</div>
@@ -120,15 +120,15 @@
 			<div class="row form-group">
 				<div class="col-md-4">
 					<label for="" class="control-label">Awareness Mark</label>
-					<input type="number" class="form-control" name="awareness_mark" id='awareness_mark' required="" value="">
+					<input type="number" class="form-control" name="awareness_mark" id='awareness_mark' required="" value="50">
 				</div>
 				<div class="col-md-4">
 					<label for="" class="control-label">Theory Mark</label>
-					<input type="number" class="form-control" name="theory_mark" id="theory_mark" required="" value="">
+					<input type="number" class="form-control" name="theory_mark" id="theory_mark" required="" value="50">
 				</div>
 				<div class="col-md-4">
 					<label for="" class="control-label">Practical Mark</label>
-					<input type="number" class="form-control" name="practical_mark" id ="practical_mark" required="" value="">
+					<input type="number" class="form-control" name="practical_mark" id ="practical_mark" required="" value="50">
 				</div>
 			</div>
 		</div>
@@ -140,11 +140,11 @@
 				</div>
 				<div class="col-md-4">
 					<label for="" class="control-label">Result</label>
-					<input type="text" class="form-control" name="firstname" required="" value="pass">
+					<input type="text" class="form-control" name="result" required="" value="pass">
 				</div>
 				<div class="col-md-4">
 					<label for="" class="control-label">Result Date</label>
-					<input type="date" class="input-group-text" id="result_date" for="result_date" name="result_date">
+					<input type="date" class="input-group-text" value="2023-03-29" id="result_date" for="result_date" name="result_date">
 				</div>
 			</div>
 		</div>
